@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MyCredit concept | States board</title>
+<meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,600&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;padding:48px;background:#EDE9D3;color:#16130C;font:400 14px/1.5 "IBM Plex Mono",monospace}
+  h1{font:600 40px/1 Newsreader,serif;letter-spacing:-.03em;margin:0 0 8px}
+  h2{font:600 26px/1.1 Newsreader,serif;letter-spacing:-.02em;margin:56px 0 16px;padding-top:16px;border-top:2px solid #16130C}
+  .board{display:flex;gap:32px;align-items:flex-start;overflow-x:auto;padding-bottom:16px}
+  figure{margin:0;flex:none}
+  figcaption{margin-bottom:8px;font-weight:500}
+  figcaption a{color:inherit}
+  .frame{border:2px solid #16130C;background:#fff;overflow:hidden}
+  .frame iframe{border:0;display:block;transform-origin:0 0}
+  .p .frame{width:390px;height:844px} .p iframe{width:390px;height:844px}
+  .t .frame{width:492px;height:708px} .t iframe{width:820px;height:1180px;transform:scale(.6)}
+  .d .frame{width:768px;height:480px} .d iframe{width:1280px;height:800px;transform:scale(.6)}
+</style>
+</head>
+<body>
+<h1>MyCredit concept: states board</h1>
+<p>Every frame is the live page at its real width. Click a caption to open it full size.</p>
+<div id="out"></div>
+<script>
+const G=[
+ ['Homepage at three widths',[['p','Phone 390','index.html'],['t','Tablet 820','index.html'],['d','Desktop 1280','index.html']]],
+ ['Hero slip: each chip selected',[['p','a business owner','index.html?chip=business'],['p','an employee','index.html?chip=employee'],['p','a school owner','index.html?chip=school'],['p','Phone menu open','index.html?menu=open']]],
+ ['The statement: empty and filled',[['d','No rate entered','index.html#statement'],['d','24% on 500,000 over 12 months','index.html?rate=24#statement'],['p','Phone, filled','index.html?rate=24#statement']]],
+ ['What to bring: each tab, ticked',[['d','On a payroll, 2 of 4 ticked','index.html?tab=payroll&tick=2#bring'],['d','Business owner','index.html?tab=business#bring'],['d','Company or school, 3 ticked','index.html?tab=company&tick=3#bring'],['p','Phone, ticked','index.html?tab=payroll&tick=2#bring']]],
+ ['Schools and existing customers',[['d','Schools band','index.html#schools'],['d','Existing customers','index.html#existing'],['p','Phone','index.html#schools']]],
+ ['Enquiry: empty, error, ready',[['p','Empty','index.html#ask'],['p','Error','index.html?form=error#ask'],['p','Ready','index.html?form=ready#ask'],['d','Desktop, ready','index.html?form=ready#ask']]],
+ ['Kuza Elimu at three widths',[['p','Phone 390','kuza-elimu.html'],['t','Tablet 820','kuza-elimu.html'],['d','Desktop 1280','kuza-elimu.html']]],
+ ['Kuza Elimu: compare, documents, funders, enquiry',[['d','Compare table','kuza-elimu.html#compare'],['p','Compare, stacked blocks','kuza-elimu.html#compare'],['d','Documents, 4 of 7','kuza-elimu.html?tick=4#bring'],['d','Funders','kuza-elimu.html#funders'],['p','Enquiry, secured loan preselected','kuza-elimu.html#ask']]],
+];
+document.getElementById('out').innerHTML=G.map(([h,fs])=>`<h2>${h}</h2><div class="board">${fs.map(([c,l,u])=>`<figure class="${c}"><figcaption><a href="${u}" target="_blank">${l}</a></figcaption><div class="frame"><iframe src="${u}" loading="lazy" title="${l}"></iframe></div></figure>`).join('')}</div>`).join('');
+</script>
+</body>
+</html>
