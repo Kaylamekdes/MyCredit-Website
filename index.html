@@ -4,15 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>MyCredit | Know what to bring before you ask</title>
-<meta name="description" content="Design concept by TheCompany.design. Not the official MyCredit website.">
+<meta name="description" content="A redesign concept for MyCredit by TheCompany.design. Not the official MyCredit website.">
 <meta name="robots" content="noindex">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#FAF9F4">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MyCredit: know what to bring before you ask">
+<meta property="og:description" content="A redesign concept for MyCredit by TheCompany.design. Not the official MyCredit website.">
+<meta property="og:url" content="https://kaylamekdes.github.io/MyCredit-Website/">
+<meta property="og:image" content="https://kaylamekdes.github.io/MyCredit-Website/assets/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.classList.add('js')</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/v2.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<div class="progress-top" aria-hidden="true"></div>
 
 <div class="concept"><p>Design concept by TheCompany.design. Not the official MyCredit website and not approved by MyCredit.</p></div>
 
@@ -31,125 +43,180 @@
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
     <nav class="menu-panel" id="menu" aria-label="Menu" hidden>
       <ul>
-        <li><a href="index.html#statement">Loans</a></li>
-        <li><a href="kuza-elimu.html">Schools</a></li>
-        <li><a href="index.html#bring">What to bring</a></li>
-        <li><a href="index.html#existing">Existing customers</a></li>
+        <li style="--i:0"><a href="index.html#statement">Loans</a></li>
+        <li style="--i:1"><a href="kuza-elimu.html">Schools</a></li>
+        <li style="--i:2"><a href="index.html#bring">What to bring</a></li>
+        <li style="--i:3"><a href="index.html#existing">Existing customers</a></li>
       </ul>
-      <div class="menu-cta"><a class="btn btn-primary btn-block" href="https://wa.me/254711349805" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      <div class="menu-cta" style="--i:4"><a class="btn btn-primary btn-block" href="https://wa.me/254711349805" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
     </nav>
   </div>
 </header>
 
 <main id="main">
 
-  <!-- Hero: the enquiry slip -->
   <section class="hero" aria-labelledby="hero-h">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <h1 class="display" id="hero-h">Know what to bring <span class="hl">before you ask.</span></h1>
-        <p class="lede">MyCredit lends to businesses, employees and schools. Say which you are, and we write your checklist.</p>
-        <p class="licence">Digital Credit Provider licensed by the Central Bank of Kenya.</p>
-      </div>
+    <div class="wrap">
+      <p class="kicker" data-hero style="--d:0"><span class="dot" aria-hidden="true"></span>Digital Credit Provider licensed by the Central Bank of Kenya.</p>
+      <h1 class="display hero-h" id="hero-h">
+        <span class="ln"><span>Know what to bring</span></span>
+        <span class="ln"><span><span class="mark">before you ask.</span></span></span>
+      </h1>
 
-      <div>
-        <div class="slip-wrap">
+      <div class="hero-grid">
+        <div class="hero-side" data-hero style="--d:450">
+          <p class="lede">MyCredit lends to businesses, employees and schools. Say which you are, and we write your checklist.</p>
+          <p class="small">Already have a loan? Dial <a class="inline-link" href="tel:*322%23">*322#</a> or message us on <a class="inline-link" href="https://wa.me/254711349805" target="_blank" rel="noopener">WhatsApp</a>.</p>
+        </div>
+
+        <div class="slip-wrap" data-hero style="--d:600">
+        <svg class="bfly" viewBox="-10 -50 420 350" aria-hidden="true" focusable="false">
+          <g class="bw"><g transform="translate(200 0) scale(-1 1)">
+            <path class="b-fill b-line" pathLength="1" d="M0,152 C64,150 132,160 160,198 C178,230 152,282 108,286 C54,290 4,222 0,152 Z"/>
+            <path class="b-fill b-line" pathLength="1" d="M0,140 C2,70 42,12 124,3 C168,-2 197,12 193,44 C187,92 122,132 0,152 Z"/>
+            <path class="b-ink" d="M124,3 C168,-2 197,12 193,44 C189,64 172,80 150,92 C158,60 150,30 124,3 Z"/>
+            <path class="b-vein b-line" pathLength="1" d="M0,146 C40,100 90,56 150,26"/>
+            <path class="b-vein b-line" pathLength="1" d="M0,148 C50,128 100,112 168,98"/>
+            <path class="b-vein b-line" pathLength="1" d="M2,160 C50,176 100,214 126,262"/>
+            <path class="b-vein b-line" pathLength="1" d="M2,156 C60,170 120,184 150,206"/>
+            <circle class="b-ink" cx="112" cy="232" r="9"/>
+            <circle class="b-ink" cx="76" cy="206" r="6"/>
+          </g></g>
+          <g class="bw"><g transform="translate(200 0)">
+            <path class="b-fill b-line" pathLength="1" d="M0,152 C64,150 132,160 160,198 C178,230 152,282 108,286 C54,290 4,222 0,152 Z"/>
+            <path class="b-fill b-line" pathLength="1" d="M0,140 C2,70 42,12 124,3 C168,-2 197,12 193,44 C187,92 122,132 0,152 Z"/>
+            <path class="b-ink" d="M124,3 C168,-2 197,12 193,44 C189,64 172,80 150,92 C158,60 150,30 124,3 Z"/>
+            <path class="b-vein b-line" pathLength="1" d="M0,146 C40,100 90,56 150,26"/>
+            <path class="b-vein b-line" pathLength="1" d="M0,148 C50,128 100,112 168,98"/>
+            <path class="b-vein b-line" pathLength="1" d="M2,160 C50,176 100,214 126,262"/>
+            <path class="b-vein b-line" pathLength="1" d="M2,156 C60,170 120,184 150,206"/>
+            <circle class="b-ink" cx="112" cy="232" r="9"/>
+            <circle class="b-ink" cx="76" cy="206" r="6"/>
+          </g></g>
+          <g class="b-ant">
+            <path class="b-line" pathLength="1" d="M197,34 C192,4 180,-22 162,-40"/>
+            <path class="b-line" pathLength="1" d="M203,34 C208,4 220,-22 238,-40"/>
+          </g>
+          <rect class="b-body" x="194" y="30" width="12" height="240" rx="6"/>
+        </svg>
           <div class="slip perf" data-slip>
             <div class="slip-head" aria-hidden="true"><span>Enquiry slip</span><span>MyCredit</span></div>
             <fieldset class="chips">
-              <legend class="mono-label">I am</legend>
+              <legend>I am</legend>
               <label class="chip"><input type="radio" name="iam" value="business" checked><span>a business owner</span></label>
               <label class="chip"><input type="radio" name="iam" value="employee"><span>an employee</span></label>
               <label class="chip"><input type="radio" name="iam" value="school"><span>a school owner</span></label>
             </fieldset>
             <p class="mono-label" id="bring-label">Bring</p>
             <div class="slip-lists"></div>
-            <a class="btn btn-primary btn-block slip-send" href="https://wa.me/254711349805" target="_blank" rel="noopener">Send this list on WhatsApp</a>
+            <a class="btn btn-primary btn-block slip-send" href="https://wa.me/254711349805" target="_blank" rel="noopener">Send this list on WhatsApp <svg class="arr" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
             <p class="slip-note">Nothing is sent until you tap. Amounts and terms: confirm with MyCredit.</p>
           </div>
         </div>
-        <p class="hero-after">Already have a loan? Dial <a href="tel:*322%23">*322#</a> or message us on <a href="https://wa.me/254711349805" target="_blank" rel="noopener">WhatsApp</a>.</p>
       </div>
     </div>
   </section>
 
-  <!-- The statement -->
-  <section class="section bg-cream rule-top" id="statement" aria-labelledby="statement-h">
-    <div class="wrap split">
-      <div class="split-lead">
-        <h2 class="h2" id="statement-h">Every figure written down before you sign.</h2>
-        <p class="lede">Enter your amount, months and rate. We show the monthly payment and the total. We never guess a rate.</p>
-      </div>
-      <div data-calc></div>
-    </div>
-  </section>
-
-  <!-- What to bring -->
-  <section class="section bg-white" id="bring" aria-labelledby="bring-h">
-    <div class="wrap split">
-      <div class="split-lead">
-        <h2 class="h2" id="bring-h">Gather your documents before you apply.</h2>
-        <p class="lede">Choose who is applying. Tick each document as you find it, and send MyCredit what is still missing.</p>
-        <p class="note">Lists are from MyCredit's current product pages. MyCredit confirms the final list for each loan.</p>
-      </div>
-      <div data-docs="payroll,business,company"></div>
-    </div>
-  </section>
-
-  <!-- Schools -->
-  <section class="section on-ink" id="schools" aria-labelledby="schools-h">
+  <section class="sec white" id="statement" aria-labelledby="statement-h">
     <div class="wrap">
-      <div class="ink-head">
+      <p class="sec-head" data-reveal><span class="idx">01</span>The statement</p>
+      <div class="cols">
+        <div class="lead" data-reveal>
+          <h2 class="h2" id="statement-h">Every figure written down before you sign.</h2>
+          <p class="lede">Enter your amount, months and rate. We show the monthly payment and the total. We never guess a rate.</p>
+        </div>
+        <div class="body" data-calc data-reveal style="--i:1"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="bring" aria-labelledby="bring-h">
+    <div class="wrap">
+      <p class="sec-head" data-reveal><span class="idx">02</span>What to bring</p>
+      <div class="cols">
+        <div class="lead" data-reveal>
+          <h2 class="h2" id="bring-h">Gather your documents before you apply.</h2>
+          <p class="lede">Choose who is applying. Tick each document as you find it, and send MyCredit what is still missing.</p>
+          <p class="note">Lists are from MyCredit's current product pages. MyCredit confirms the final list for each loan.</p>
+        </div>
+        <div class="body" data-docs="payroll,business,company" data-reveal style="--i:1"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ink" id="schools" aria-labelledby="schools-h">
+    <div class="wrap">
+      <p class="sec-head" data-reveal><span class="idx">03</span>Schools</p>
+      <div class="ink-intro" data-reveal>
         <h2 class="h2" id="schools-h">Kuza Elimu finances the next thing a school needs.</h2>
         <p class="lede">Three loans cover growing and running a school. You pick by what you are paying for.</p>
       </div>
-      <ul class="ruled">
+      <ul class="ruled" data-stagger>
         <li><span class="big">Classrooms and upgrades</span><span class="tag">Secured loan</span></li>
         <li><span class="big">Kitchens and laboratories</span><span class="tag">Secured loan</span></li>
         <li><span class="big">School buses and vans</span><span class="tag">Asset finance, or secured loan</span></li>
         <li><span class="big">Off-grid solar and biogas</span><span class="tag">Secured loan</span></li>
         <li><span class="big">Supplies, salaries and food</span><span class="tag">Unsecured loan</span></li>
       </ul>
-      <div class="ink-foot">
-        <a class="btn btn-primary" href="kuza-elimu.html#compare">Compare the three loans</a>
+      <div class="ink-foot" data-reveal>
+        <a class="btn btn-primary" href="kuza-elimu.html#compare">Compare the three loans <svg class="arr" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
         <p class="note">MyCredit's Kuza Elimu page names Triodos Investment Management, Oiko Credit and BlueOrchard as funders. To confirm with MyCredit before publishing.</p>
       </div>
     </div>
   </section>
 
-  <!-- Existing customers -->
-  <section class="section bg-cream" id="existing" aria-labelledby="existing-h">
-    <div class="wrap split">
-      <div class="split-lead">
-        <h2 class="h2" id="existing-h">Already have a loan with us?</h2>
-        <p class="lede">Skip the sales pages. These reach the team that looks after existing customers.</p>
+  <section class="sec white" id="stories" aria-labelledby="stories-h">
+    <div class="wrap">
+      <p class="sec-head" data-reveal><span class="idx">04</span>Growth stories</p>
+      <div class="stories-intro" data-reveal>
+        <h2 class="h2" id="stories-h">What growth looks like.</h2>
+        <p class="lede">Short films from MyCredit's own YouTube channel.</p>
       </div>
-      <div>
-        <div class="rows">
-          <a class="row" href="tel:*322%23"><span class="row-name">Dial *322#</span><span class="row-note">On any phone</span></a>
-          <a class="row" href="https://wa.me/254711349805" target="_blank" rel="noopener"><span class="row-name">WhatsApp</span><span class="row-note">About my loan</span></a>
-          <a class="row" href="mailto:talktous@mycredit.co.ke"><span class="row-name">Email</span><span class="row-note">talktous@mycredit.co.ke</span></a>
-          <a class="row" href="https://www.mycredit.co.ke/" target="_blank" rel="noopener"><span class="row-name">Find a branch</span><span class="row-note">Opens the live site</span></a>
-        </div>
-        <p class="note">Payment instructions (paybill and account format) are missing here because MyCredit has not supplied them.</p>
+      <div class="clips" data-clips="SqSah1pYvYQ,sSzkDHywrwM,yYBiKGvArI0,biTmi2Oydko" data-reveal style="--i:1"></div>
+      <div class="stories-foot" data-reveal>
+        <p class="note">Shown as MyCredit published them. Pick a film to play it here.</p>
+        <a class="btn btn-secondary" href="https://www.youtube.com/@mycreditlimited" target="_blank" rel="noopener">More on YouTube <svg class="arr" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
       </div>
     </div>
   </section>
 
-  <!-- Enquiry -->
-  <section class="section bg-white" id="ask" aria-labelledby="ask-h">
-    <div class="wrap split">
-      <div class="split-lead">
-        <h2 class="h2" id="ask-h">Ask a person.</h2>
-        <p class="lede">Tell us what you need and we write the message for you to send.</p>
+  <section class="sec" id="existing" aria-labelledby="existing-h">
+    <div class="wrap">
+      <p class="sec-head" data-reveal><span class="idx">05</span>Existing customers</p>
+      <div class="cols">
+        <div class="lead" data-reveal>
+          <h2 class="h2" id="existing-h">Already have a loan with us?</h2>
+          <p class="lede">Skip the sales pages. These reach the team that looks after existing customers.</p>
+        </div>
+        <div class="body">
+          <div class="rows" data-stagger>
+            <a class="row" href="tel:*322%23"><span class="row-name">Dial *322#</span><span class="row-note">On any phone</span><svg class="arr" viewBox="0 0 22 22" aria-hidden="true"><path d="M5 17L17 5M8 5h9v9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+            <a class="row" href="https://wa.me/254711349805" target="_blank" rel="noopener"><span class="row-name">WhatsApp</span><span class="row-note">About my loan</span><svg class="arr" viewBox="0 0 22 22" aria-hidden="true"><path d="M5 17L17 5M8 5h9v9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+            <a class="row" href="mailto:talktous@mycredit.co.ke"><span class="row-name">Email</span><span class="row-note">talktous@mycredit.co.ke</span><svg class="arr" viewBox="0 0 22 22" aria-hidden="true"><path d="M5 17L17 5M8 5h9v9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+            <a class="row" href="https://www.mycredit.co.ke/" target="_blank" rel="noopener"><span class="row-name">Find a branch</span><span class="row-note">Opens the live site</span><svg class="arr" viewBox="0 0 22 22" aria-hidden="true"><path d="M5 17L17 5M8 5h9v9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+          </div>
+          <p class="note" data-reveal>Payment instructions (paybill and account format) are missing here because MyCredit has not supplied them.</p>
+        </div>
       </div>
-      <div data-enquiry></div>
+    </div>
+  </section>
+
+  <section class="sec white" id="ask" aria-labelledby="ask-h">
+    <div class="wrap">
+      <p class="sec-head" data-reveal><span class="idx">06</span>Enquiry</p>
+      <div class="cols">
+        <div class="lead" data-reveal>
+          <h2 class="h2" id="ask-h">Ask a person.</h2>
+          <p class="lede">Tell us what you need and we write the message for you to send.</p>
+        </div>
+        <div class="body" data-enquiry data-reveal style="--i:1"></div>
+      </div>
     </div>
   </section>
 
 </main>
 
-<footer class="site-foot on-ink">
+<footer class="site-foot ink">
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-about">
@@ -158,7 +225,7 @@
         <p><em>Licence number to be added from MyCredit's records.</em></p>
         <p>Absa Towers, 11th Floor, Loita Street, Nairobi</p>
       </div>
-      <div>
+      <div class="foot-col">
         <h2 class="foot-h">Talk to us</h2>
         <ul class="foot-list">
           <li><a href="https://wa.me/254711349805" target="_blank" rel="noopener">WhatsApp +254 711 349 805</a></li>
@@ -167,7 +234,7 @@
           <li><a href="tel:*322%23">USSD: dial *322#</a></li>
         </ul>
       </div>
-      <div>
+      <div class="foot-col">
         <h2 class="foot-h">On the live site</h2>
         <ul class="foot-list">
           <li><a href="https://www.mycredit.co.ke/" target="_blank" rel="noopener">Business loan</a></li>
@@ -193,5 +260,7 @@
 </nav>
 
 <script src="js/site.js"></script>
+<script src="js/clips.js"></script>
+<script src="js/motion.js"></script>
 </body>
 </html>
