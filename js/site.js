@@ -31,12 +31,20 @@
   const menuBtn = $('.menu-btn');
   const menu = $('#menu');
   if (menuBtn && menu) {
+    const scrim = $('.menu-scrim');
+    const head = $('.site-head');
     const set = (open) => {
+      if (open && head) {
+        // The sheet opens just below the header, wherever the header sits right now
+        document.documentElement.style.setProperty('--menu-top', `${Math.max(0, head.getBoundingClientRect().bottom)}px`);
+      }
       menuBtn.setAttribute('aria-expanded', String(open));
       menuBtn.textContent = open ? 'Close' : 'Menu';
       menu.hidden = !open;
+      document.documentElement.classList.toggle('menu-open', open);
     };
     menuBtn.addEventListener('click', () => set(menuBtn.getAttribute('aria-expanded') !== 'true'));
+    if (scrim) scrim.addEventListener('click', () => { set(false); menuBtn.focus(); });
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && !menu.hidden) { set(false); menuBtn.focus(); }
     });
